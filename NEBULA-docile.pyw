@@ -15,7 +15,7 @@ import time
 
 
 
-
+desk = GetDC(0)
 s = string
 s.ascii_letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
