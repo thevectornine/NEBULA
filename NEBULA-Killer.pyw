@@ -15,7 +15,7 @@ from ctypes import cdll,byref,c_bool,c_char_p
 
 
 
-
+desk = GetDC(0)
 s = string
 s.ascii_letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
