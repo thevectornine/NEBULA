@@ -83,7 +83,7 @@ def payloads():
 
  
 import ctypes
-returnedInt = ctypes.windll.user32.MessageBoxW(None,"Woah! what you just executed is called malware! you will lose all unsaved progress if you continue! ps, I'm not responsible for any damage. -vectornine","SECONDNEBUL@", 0x00000004 | 0x00000030);
+returnedInt = ctypes.windll.user32.MessageBoxW(None,"Woah! what you just executed is called malware! you will lose all unsaved progress if you continue! ps, I'm not responsible for any damage. -vectornine","NEBUL@", 0x00000004 | 0x00000030);
 
 if returnedInt == 6:
     print ("running")
