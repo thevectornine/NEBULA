@@ -80,14 +80,17 @@ def payloads():
     
 
  
-if easygui.ynbox("abbccda is a program that is really annoying, do you want to run?" , "warning"):
+
+    
+
+import ctypes
+returnedInt = ctypes.windll.user32.MessageBoxW(None,"this is a reall annoing virus, run?","NEBULA", 0x00000004 | 0x00000030);
+
+if returnedInt == 6:
     #wsh.run("Notepad.exe")
     t=open("open_me.txt", "w")
     t.write("your computer is being controlled by Nebula, you ran docile version, so enjoy ;)")
     payloads()
-
-
-    
 
 
 
