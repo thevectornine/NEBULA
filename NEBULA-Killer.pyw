@@ -82,16 +82,16 @@ def payloads():
     
 
  
-if easygui.ynbox("abbccda is a program that is really annoying, do you want to run?" , "warning"):
+import ctypes
+returnedInt = ctypes.windll.user32.MessageBoxW(None,"Woah! what you just executed is called malware! you will lose all unsaved progress if you continue! ps, I'm not responsible for any damage. -vectornine","SECONDNEBUL@", 0x00000004 | 0x00000030);
+
+if returnedInt == 6:
+    print ("running")
     #wsh.run("Notepad.exe")
-    t=open("open_me.txt", "w")
-    t.write("your computer is being controlled by Nebula, you ran docile version, so enjoy ;)")
+    t=open("letter.txt", "w")
+    t.write("you computer has been fudged by the second nebula")
+    time.sleep(5)
     payloads()
 
 
-    
 
-
-
-
-#payloads()
